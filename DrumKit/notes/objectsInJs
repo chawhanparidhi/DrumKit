@@ -1,0 +1,36 @@
+// objects
+
+var housekeeper1 = {
+    name: 'Tiny',
+    yersOfExperience: 12,
+    cleaningRepretoire: ["bathroom","loby","bedroom"]
+}
+
+//constructor function
+
+function BellBoy(name,age,hasWorkPermit,languages) {
+    this.name = name;
+    this.age = age;
+    this.hasWorkPermit = hasWorkPermit;
+    this.languages = languages;
+    //adding method
+    this.moveSuitecase = function(){
+        alert("May I take your suitecase?");
+        pickUpSuitecase();
+        move();
+    }
+}
+
+var BellBoy1 = new BellBoy("Timmy",19,true,["French","English",]);
+
+//housekeeper example
+
+function HouseKeeper(name,yearsOfExperience,cleaningRepertoire) {
+    this.name = name;
+    this.yearsOfExperience=yearsOfExperience;
+    this.cleaningRepertoire = cleaningRepertoire;
+    this.clean = function(){
+        alert("Cleaning in progress.....");
+    }
+}
+var HouseKeeper1 = new HouseKeeper("Tiny",19,["Bathroom","lobby","Bedroom"]);
